@@ -4,10 +4,11 @@ print('Enter 2 numbers :')
 a = int(input())
 b = int(input())
 
-def is_power(a, b) :
-    if a % b == 0 and ((a/b) % b == 0)  :
+def is_power(a,b):
+    if a == b:
         return True
-    else :
-        return False
+    if a % b == 0 and is_power(a/b,b):
+        return True
+    return False
 
 print(is_power(a, b))
