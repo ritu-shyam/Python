@@ -1,5 +1,6 @@
 # Square Root
 
+import math
 def mysqrt(a) :
     while True :
         y = (x + a/x) / 2
@@ -15,7 +16,7 @@ def test_square_root() :
     while a < 10 :
         b = mysqrt(a)
         c = math.sqrt(a)
-        d = abs(mysqrt(a)-math.sqrt(a)
+        d = abs(mysqrt(a)-math.sqrt(a))
         print(a,"          ",b,"         ",c,"          ",d)
         a = a + 1
 
